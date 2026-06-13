@@ -1,0 +1,101 @@
+# בר אוריין — Generative Engine Optimization Map
+
+> A handmade wood art business specializing in pyrography — burning personalized designs onto wood using a soldering iron. The brand creates meaningful, custom-made pieces such as home signs for couples and families, wedding gifts, birthday gifts, and military milestone gifts (enlistment and discharge). The work carries a warm, personal, and sentimental vibe, appealing to people who value unique, handcrafted gifts for life's special moments.
+
+---
+
+## Pages
+
+### בית
+https://-a5bf72d8.zappy5.app
+מחפשים מתנות ליום הולדת מרגשות ומיוחדות? בר אוריין יוצרים עבורכם יצירות עץ בעבודת יד בטכניקת פירוגרפיה עם הקדשה אישית שתשאיר חותם. הזמינו עכשיו מתנה בלתי נשכחת!
+
+### אירועים
+https://-a5bf72d8.zappy5.app/occasions
+חוגגים רגעים מיוחדים? גלו את קולקציית המתנות לחתונה, יום הולדת ומסיבות גיוס ושחרור מצה&quot;ל. כל פריט נצרב בעץ בהתאמה אישית עם וייב חם וסנטימנטלי. הציצו עכשיו!
+
+### אודות
+https://-a5bf72d8.zappy5.app/about
+בר אוריין הוא מותג אמנות בעץ שמביא לחיים מתנות בעבודת יד עם צריבה אישית וסיפור. כנסו לקרוא איך הפכנו תשוקה לפירוגרפיה למזכרות מרגשות עבור המשפחות והזוגות שלכם.
+
+### צור קשר
+https://-a5bf72d8.zappy5.app/contact
+רוצים להזמין מתנה מעץ שתדבר מהלב? מלאו פרטים ונחזור אליכם במהירות להתאמת צריבה אישית לחתונה, יום הולדת או כל אירוע מיוחד. בואו נתחיל ליצור את הקסם שלכם!
+
+### Products
+https://-a5bf72d8.zappy5.app/products
+המוצרים שלנו - בר אוריין
+
+### Cart
+https://-a5bf72d8.zappy5.app/cart
+עגלת הקניות שלך
+
+### Checkout
+https://-a5bf72d8.zappy5.app/checkout
+תשלום
+
+### Login
+https://-a5bf72d8.zappy5.app/login
+התחברות לקוחות
+
+### Account
+https://-a5bf72d8.zappy5.app/account
+החשבון שלי
+
+### Order Success
+https://-a5bf72d8.zappy5.app/order-success
+תודה על ההזמנה
+
+### Product Detail
+https://-a5bf72d8.zappy5.app/product/:slug
+פרטי המוצר - בר אוריין
+
+### Category
+https://-a5bf72d8.zappy5.app/category/:slug
+מוצרים - בר אוריין
+
+## Legal & Policy
+
+### Privacy Policy
+https://-a5bf72d8.zappy5.app/privacy
+Information about how user data is collected, stored, and protected.
+
+### Terms & Conditions
+https://-a5bf72d8.zappy5.app/terms
+Legal terms describing service usage, rights, and policies.
+
+### Accessibility Statement
+https://-a5bf72d8.zappy5.app/accessibility
+Information about WCAG compliance and accessibility features.
+
+---
+
+## Products
+
+_No products are currently configured._
+
+---
+
+# Business Context (for LLM understanding)
+
+## About בר אוריין
+A handmade wood art business specializing in pyrography — burning personalized designs onto wood using a soldering iron. The brand creates meaningful, custom-made pieces such as home signs for couples and families, wedding gifts, birthday gifts, and military milestone gifts (enlistment and discharge). The work carries a warm, personal, and sentimental vibe, appealing to people who value unique, handcrafted gifts for life's special moments.
+
+## Target Audience
+- זוגות, חתנים וכלות, משפחות, מחפשי מתנות לגיוס ושחרור, מחפשי מתנות ליום הולדת
+- זוגות מחפשי מתנות
+- מחפשי מתנות לגיוס ושחרור
+- מחפשי מתנות ליום הולדת
+
+## Industry
+Handmade Wood Art & Gifts
+
+---
+
+# Machine-readable feeds
+
+- Sitemap (XML): https://-a5bf72d8.zappy5.app/sitemap.xml
+- Robots: https://-a5bf72d8.zappy5.app/robots.txt
+- Flattened page text (for LLMs): https://-a5bf72d8.zappy5.app/llms-full.txt
+- Products (JSON): https://-a5bf72d8.zappy5.app/products.json
+- Products (Google Merchant RSS): https://-a5bf72d8.zappy5.app/product-feed.xml
