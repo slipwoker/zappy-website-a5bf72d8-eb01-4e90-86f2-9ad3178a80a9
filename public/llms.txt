@@ -7,65 +7,65 @@
 ## Pages
 
 ### בית
-https://-a5bf72d8.zappy5.app
+https://example.com
 מחפשים מתנות ליום הולדת מרגשות ומיוחדות? בר אוריין יוצרים עבורכם יצירות עץ בעבודת יד בטכניקת פירוגרפיה עם הקדשה אישית שתשאיר חותם. הזמינו עכשיו מתנה בלתי נשכחת!
 
 ### אירועים
-https://-a5bf72d8.zappy5.app/occasions
+https://example.com/occasions
 חוגגים רגעים מיוחדים? גלו את קולקציית המתנות לחתונה, יום הולדת ומסיבות גיוס ושחרור מצה&quot;ל. כל פריט נצרב בעץ בהתאמה אישית עם וייב חם וסנטימנטלי. הציצו עכשיו!
 
 ### אודות
-https://-a5bf72d8.zappy5.app/about
+https://example.com/about
 בר אוריין הוא מותג אמנות בעץ שמביא לחיים מתנות בעבודת יד עם צריבה אישית וסיפור. כנסו לקרוא איך הפכנו תשוקה לפירוגרפיה למזכרות מרגשות עבור המשפחות והזוגות שלכם.
 
 ### צור קשר
-https://-a5bf72d8.zappy5.app/contact
+https://example.com/contact
 רוצים להזמין מתנה מעץ שתדבר מהלב? מלאו פרטים ונחזור אליכם במהירות להתאמת צריבה אישית לחתונה, יום הולדת או כל אירוע מיוחד. בואו נתחיל ליצור את הקסם שלכם!
 
 ### Products
-https://-a5bf72d8.zappy5.app/products
+https://example.com/products
 המוצרים שלנו - בר אוריין
 
 ### Cart
-https://-a5bf72d8.zappy5.app/cart
+https://example.com/cart
 עגלת הקניות שלך
 
 ### Checkout
-https://-a5bf72d8.zappy5.app/checkout
+https://example.com/checkout
 תשלום
 
 ### Login
-https://-a5bf72d8.zappy5.app/login
+https://example.com/login
 התחברות לקוחות
 
 ### Account
-https://-a5bf72d8.zappy5.app/account
+https://example.com/account
 החשבון שלי
 
 ### Order Success
-https://-a5bf72d8.zappy5.app/order-success
+https://example.com/order-success
 תודה על ההזמנה
 
 ### Product Detail
-https://-a5bf72d8.zappy5.app/product/:slug
+https://example.com/product/:slug
 פרטי המוצר - בר אוריין
 
 ### Category
-https://-a5bf72d8.zappy5.app/category/:slug
+https://example.com/category/:slug
 מוצרים - בר אוריין
 
 ## Legal & Policy
 
 ### Privacy Policy
-https://-a5bf72d8.zappy5.app/privacy
+https://example.com/privacy
 Information about how user data is collected, stored, and protected.
 
 ### Terms & Conditions
-https://-a5bf72d8.zappy5.app/terms
+https://example.com/terms
 Legal terms describing service usage, rights, and policies.
 
 ### Accessibility Statement
-https://-a5bf72d8.zappy5.app/accessibility
+https://example.com/accessibility
 Information about WCAG compliance and accessibility features.
 
 ---
@@ -94,8 +94,8 @@ Handmade Wood Art & Gifts
 
 # Machine-readable feeds
 
-- Sitemap (XML): https://-a5bf72d8.zappy5.app/sitemap.xml
-- Robots: https://-a5bf72d8.zappy5.app/robots.txt
-- Flattened page text (for LLMs): https://-a5bf72d8.zappy5.app/llms-full.txt
-- Products (JSON): https://-a5bf72d8.zappy5.app/products.json
-- Products (Google Merchant RSS): https://-a5bf72d8.zappy5.app/product-feed.xml
+- Sitemap (XML): https://example.com/sitemap.xml
+- Robots: https://example.com/robots.txt
+- Flattened page text (for LLMs): https://example.com/llms-full.txt
+- Products (JSON): https://example.com/products.json
+- Products (Google Merchant RSS): https://example.com/product-feed.xml
