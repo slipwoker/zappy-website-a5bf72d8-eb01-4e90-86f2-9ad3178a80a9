@@ -357,7 +357,7 @@
       <div class="search-results" id="mobile-search-results"></div>
     </div>
   
-<script>window.ZAPPY_WEBSITE_ID = "a5bf72d8-eb01-4e90-86f2-9ad3178a80a9";window.ZAPPY_API_BASE = "https://api.zappy5.com";</script><a class="skip-link" href="#main">דלג לתוכן הראשי</a>
+<script>window.ZAPPY_WEBSITE_ID = "a5bf72d8-eb01-4e90-86f2-9ad3178a80a9";window.ZAPPY_API_BASE = (window.location.pathname.includes('/preview') ? "https://api.zappy5.com" : "https://api.zappy5.com");</script><a class="skip-link" href="#main">דלג לתוכן הראשי</a>
   <nav class="navbar" dir="rtl">
   <button class="mobile-toggle" id="mobileToggle" aria-label="Menu">
     <svg class="hamburger-icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
@@ -394,13 +394,13 @@
   
 
     
-  <li><a href="/">בית</a></li><li><a href="/occasions">אירועים</a></li><li><a href="/about">אודות</a></li><li><a href="/contact">צור קשר</a></li></ul><div class="nav-ecommerce-icons nav-icons-left"><a href="/login" class="login-link nav-login" title="התחברות"><svg class="login-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg></a><a href="#cart" class="cart-link nav-cart" id="cart-drawer-toggle" title="עגלת קניות"><svg class="cart-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg><span class="cart-count">0</span></a><div class="nav-search-box">
+  <li><a href="/">בית</a></li><li><a href="/occasions">אירועים</a></li><li><a href="/about">אודות</a></li><li><a href="/contact">צור קשר</a></li></ul><div class="nav-ecommerce-icons nav-icons-left"><a href="/login" class="login-link nav-login" title="התחברות"><svg class="login-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg></a><a href="#cart" class="cart-link nav-cart" id="cart-drawer-toggle" title="עגלת קניות"><svg class="cart-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="9" cy="21" r="1"></circle><circle cx="20" cy="21" r="1"></circle><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path></svg><span class="cart-count">0</span></a><div class="nav-search-box">
     <input type="text" class="nav-search-input" id="nav-search-input" placeholder="חיפוש מוצרים..." autocomplete="off">
     <button class="nav-search-btn" id="nav-search-btn" title="חיפוש">
-      <svg class="search-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg>
+      <svg class="search-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><path d="M21 21l-4.35-4.35"></path></svg>
     </button>
     <div class="nav-search-results" id="nav-search-results"></div>
-  </div></div><div class="nav-ecommerce-icons nav-icons-right"><button class="nav-search-toggle" id="mobile-search-toggle" title="חיפוש"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg></button></div></div>
+  </div></div><div class="nav-ecommerce-icons nav-icons-right"><button class="nav-search-toggle" id="mobile-search-toggle" title="חיפוש"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><path d="M21 21l-4.35-4.35"></path></svg></button></div></div>
     
     
     
@@ -872,7 +872,7 @@
   </div>
   <div class="index-hero-divider-wrapper" aria-hidden="true">
     <svg data-no-icon-edit="true" aria-hidden="true" viewBox="0 0 1200 80" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
-      <path d="M0,80 L0,35 Q60,28 120,32 T240,34 Q300,30 360,36 T480,32 Q540,38 600,30 T720,34 Q780,30 840,36 T960,32 Q1020,38 1080,30 T1200,35 L1200,80 Z" fill="#FBF6EF"></path>
+      <path d="M0,80 L0,35 Q60,28 120,32 T240,34 Q300,30 360,36 T480,32 Q540,38 600,30 T720,34 Q780,30 840,36 T960,32 Q1020,38 1080,30 T1200,35 L1200,80 Z" fill="var(--bg-light)"></path>
     </svg>
   </div>
 </section>
@@ -996,17 +996,17 @@
   </div>
 </section>
 
-<section data-band-index="2" class="index-showcase-section" data-layout-spec="בית-showcase">
+<section data-band-index="2" class="index-showcase-section" data-layout-spec="בית-showcase" id="index-showcase-section">
   <div class="index-showcase-section__container">
     <header class="index-showcase-section__header">
-      <h2 class="index-showcase-section__title">מתנות מעץ בעבודת יד – לכל רגע משמעותי בחיים</h2>
-      <p class="index-showcase-section__subtitle">כל יצירה של בר אוריין נולדת מתוך סיפור אישי. מחריטה עדינה במלחם ועד לגימור מושלם – אנו יוצרים מתנות ייחודיות לחתונה, ליום הולדת, לגיוס ולשחרור, שמלוות אתכם לכל החיים.</p>
+      <h2 class="index-showcase-section__title" style="">מתנות מעץ בעבודת יד – לכל רגע משמעותי בחיים</h2>
+      <p class="index-showcase-section__subtitle" style="">כל יצירה של בר אוריין נולדת מתוך סיפור אישי. מחריטה עדינה במלחם ועד לגימור מושלם – אנו יוצרים מתנות ייחודיות לחתונה, ליום הולדת, לגיוס ולשחרור, שמלוות אתכם לכל החיים.</p>
     </header>
 
-    <nav class="zappy-catalog-menu rtl" id="zappy-catalog-menu" dir="rtl" style="display:none">
+    <nav class="zappy-catalog-menu rtl" id="zappy-catalog-menu" dir="rtl" style="transition: background 0.3s, backdrop-filter 0.3s, -webkit-backdrop-filter 0.3s; display: none !important;">
       <div class="catalog-menu-container">
-        <a href="/products" class="catalog-menu-item catalog-menu-all">מוצרים</a>
-        <div class="catalog-menu-categories" id="zappy-category-links">
+        <p class="zappy-editable"><a href="/products" class="catalog-menu-item catalog-menu-all">מוצרים</a>
+        </p><div class="catalog-menu-categories" id="zappy-category-links" dir="rtl" style="direction: rtl !important;">
           <!-- Categories will be loaded dynamically -->
         </div>
       </div>
@@ -1017,11 +1017,11 @@
       <!-- Tile 1: Weddings -->
       <article class="index-showcase-section__tile">
         <div class="index-showcase-section__tile-img-wrapper">
-          <img loading="lazy" decoding="async" data-placeholder="index-showcase-image-1" data-context="A close-up of a handcrafted wooden wedding gift with pyrography art, featuring a couple's names and wedding date burned into light oak wood, surrounded by delicate botanical line art and two intertwined rings motif, warm candlelight ambiance" width="600" height="400" src="/assets/site-index-showcase-image-1.webp" alt="מתנת חתונה מעץ בחריטת מלחם עם שמות בני הזוג" class="index-showcase-section__tile-img">
+          <div data-zappy-zoom-wrapper="true" data-element-id="img-1781373253732-oo985vgsk" data-element-type="image" data-zappy-zoom-wrapper-width="375px" data-zappy-zoom-wrapper-height="280px" data-zappy-zoom-wrapper-width-mode="px" data-zappy-zoom-wrapper-align="center" style="position: relative !important; overflow: hidden !important; width: 375px !important; max-width: 100% !important; margin-left: auto !important; margin-right: auto !important; height: 280px !important; display: block !important;" data-zappy-zoom-clip="true" data-zappy-wrapper-margins-applied="true" data-zappy-card-slot-fill="1"><img loading="lazy" decoding="async" data-placeholder="index-showcase-image-1" data-context="A close-up of a handcrafted wooden wedding gift with pyrography art, featuring a couple's names and wedding date burned into light oak wood, surrounded by delicate botanical line art and two intertwined rings motif, warm candlelight ambiance" width="600" height="400" src="/assets/site-index-showcase-image-1.webp" alt="מתנת חתונה מעץ בחריטת מלחם עם שמות בני הזוג" class="index-showcase-section__tile-img" data-element-type="image" data-element-id="img-1781373253732-oo985vgsk" style="object-position: 50% 50%; margin: 0px !important; left: -4.08764% !important; top: -2% !important; width: 108.175% !important; height: 104% !important; max-width: none !important; max-height: none !important; display: block !important; object-fit: cover !important;" data-zappy-zoom="1.04"></div>
           <div class="index-showcase-section__tile-scrim"></div>
           <div class="index-showcase-section__tile-text">
-            <h3 class="index-showcase-section__tile-title">מתנות לחתונה</h3>
-            <p class="index-showcase-section__tile-desc">שלטי אהבה אישיים עם שמות ותאריך החתונה</p>
+            <h3 class="index-showcase-section__tile-title" style="">מתנות לחתונה</h3>
+            <p class="index-showcase-section__tile-desc" style="">שלטי אהבה אישיים עם שמות ותאריך החתונה<br>וכמובן תמונה שתבחרו להנציח&nbsp;</p>
           </div>
         </div>
       </article>
@@ -1029,7 +1029,7 @@
       <!-- Tile 2: Family Home Signs -->
       <article class="index-showcase-section__tile">
         <div class="index-showcase-section__tile-img-wrapper">
-          <img loading="lazy" decoding="async" data-placeholder="index-showcase-image-2" data-context="A warm family home sign made of rich walnut wood with pyrography lettering of a family name, decorated with a tree-of-life motif and small heart details, hanging on a cream-colored wall" width="600" height="400" src="/assets/site-index-showcase-image-2.webp" alt="שלט בית משפחתי מעץ בחריטה אישית" class="index-showcase-section__tile-img">
+          <img loading="lazy" decoding="async" data-placeholder="index-showcase-image-2" data-context="A warm family home sign made of rich walnut wood with pyrography lettering of a family name, decorated with a tree-of-life motif and small heart details, hanging on a cream-colored wall" width="600" height="400" src="/assets/site-index-showcase-image-2.webp" alt="שלט בית משפחתי מעץ בחריטה אישית" class="index-showcase-section__tile-img" data-element-type="image" data-element-id="img-1781373253732-9mibuoure" style="">
           <div class="index-showcase-section__tile-scrim"></div>
           <div class="index-showcase-section__tile-text">
             <h3 class="index-showcase-section__tile-title">שלטים לבית</h3>
@@ -1041,11 +1041,11 @@
       <!-- Tile 3: Birthdays -->
       <article class="index-showcase-section__tile">
         <div class="index-showcase-section__tile-img-wrapper">
-          <img loading="lazy" decoding="async" data-placeholder="index-showcase-image-3" data-context="A beautifully crafted wooden birthday gift plaque with a name and birth date burned into the wood, surrounded by hand-drawn stars and a delicate floral wreath, resting on a rustic linen cloth" width="600" height="400" src="/assets/site-index-showcase-image-3.webp" alt="מתנת יום הולדת מעץ עם שם ותאריך בחריטה" class="index-showcase-section__tile-img">
+          <div data-zappy-zoom-wrapper="true" data-element-id="img-1781373253733-k0ju1z1h8" data-element-type="image" data-zappy-zoom-wrapper-width="375px" data-zappy-zoom-wrapper-height="280px" data-zappy-zoom-wrapper-width-mode="px" data-zappy-zoom-wrapper-align="center" style="position: relative !important; overflow: hidden !important; width: 375px !important; max-width: 100% !important; margin-left: auto !important; margin-right: auto !important; height: 280px !important; display: block !important;" data-zappy-zoom-clip="true" data-zappy-wrapper-margins-applied="true" data-zappy-card-slot-fill="1"><img loading="lazy" decoding="async" data-placeholder="index-showcase-image-3" data-context="A beautifully crafted wooden birthday gift plaque with a name and birth date burned into the wood, surrounded by hand-drawn stars and a delicate floral wreath, resting on a rustic linen cloth" width="600" height="400" src="/assets/site-index-showcase-image-3.webp" alt="מתנת יום הולדת מעץ עם שם ותאריך בחריטה" class="index-showcase-section__tile-img" data-element-type="image" data-element-id="img-1781373253733-k0ju1z1h8" style="object-position: 50% 50%; margin: 0px !important; left: 0% !important; top: 0% !important; width: 100% !important; height: 100% !important; max-width: none !important; max-height: none !important; display: block !important; object-fit: cover !important;" data-zappy-zoom="1"></div>
           <div class="index-showcase-section__tile-scrim"></div>
           <div class="index-showcase-section__tile-text">
             <h3 class="index-showcase-section__tile-title">מתנות ליום הולדת</h3>
-            <p class="index-showcase-section__tile-desc">מזכרת אישית עם שם, תאריך ואיור שמנציח את הרגע</p>
+            <p class="index-showcase-section__tile-desc" style="">מזכרת אישית עם שם, תאריך ואיור שמנציח את הרגע</p>
           </div>
         </div>
       </article>
@@ -1053,7 +1053,7 @@
       <!-- Tile 4: Military Milestones -->
       <article class="index-showcase-section__tile">
         <div class="index-showcase-section__tile-img-wrapper">
-          <img loading="lazy" decoding="async" data-placeholder="index-showcase-image-4" data-context="A wooden military milestone gift featuring a soldier's silhouette and enlistment or discharge date burned into dark stained wood, with an Israeli flag detail and olive branch motif, dramatic side lighting" width="600" height="400" src="/assets/site-index-showcase-image-4.webp" alt="מתנה לגיוס או שחרור מעץ עם חריטת מלחם" class="index-showcase-section__tile-img">
+          <img loading="lazy" decoding="async" data-placeholder="index-showcase-image-4" data-context="A wooden military milestone gift featuring a soldier's silhouette and enlistment or discharge date burned into dark stained wood, with an Israeli flag detail and olive branch motif, dramatic side lighting" width="600" height="400" src="/assets/site-index-showcase-image-4.webp" alt="מתנה לגיוס או שחרור מעץ עם חריטת מלחם" class="index-showcase-section__tile-img" data-element-type="image" data-element-id="img-1781373253733-m1jkibnlq" style="">
           <div class="index-showcase-section__tile-scrim"></div>
           <div class="index-showcase-section__tile-text">
             <h3 class="index-showcase-section__tile-title">מתנות לגיוס ושחרור</h3>
@@ -1065,7 +1065,7 @@
 
     <!-- Bottom CTA -->
     <div class="index-showcase-section__cta">
-      <a href="/contact" class="index-showcase-section__btn btn-primary">ליצירת מתנה אישית משלכם</a>
+      <a href="/contact" class="index-showcase-section__btn btn-primary" style="color: rgb(36, 28, 24) !important;" data-element-type="button" data-element-id="btn-1781373253688-rkcrc487u" data-native-element="true">ליצירת מתנה אישית משלכם</a>
     </div>
   </div>
 
@@ -1078,7 +1078,7 @@
 
   <!-- Subtle decorative tree-of-life silhouette (background motif) -->
   <div class="index-showcase-section__bg-motif" aria-hidden="true">
-    <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+    <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" data-element-type="icon" data-element-id="icon-1781373253725-h4gi48h6x" data-icon-type="svg">
       <circle cx="100" cy="100" r="95" fill="none" stroke="currentColor" stroke-width="1.5" opacity="0.6"></circle>
       <path d="M100,170 L100,60 M100,60 C100,40 85,30 70,25 M100,60 C100,40 115,30 130,25 M100,80 C85,70 60,65 45,55 M100,80 C115,70 140,65 155,55 M100,95 C80,90 55,85 35,80 M100,95 C120,90 145,85 165,80 M100,110 C85,105 65,100 45,95 M100,110 C115,105 135,100 155,95" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"></path>
       <path d="M100,170 C95,155 85,145 80,140 M100,170 C105,155 115,145 120,140 M80,140 C70,135 55,130 45,125 M120,140 C130,135 145,130 155,125" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></path>
@@ -1412,6 +1412,148 @@
       var hasDH=false;
       if(heroEl){var hCs=getComputedStyle(heroEl);var hBI=hCs.backgroundImage;if(hBI&&hBI!=='none'){if(hBI.indexOf('url(')!==-1){var hM2=hCs.backgroundColor.match(/\d+/g);if(hM2&&hM2.length>=3){hasDH=sLum(parseInt(hM2[0]),parseInt(hM2[1]),parseInt(hM2[2]))<0.4;}else{hasDH=true;}}else if(hBI.indexOf('gradient')!==-1){var cM=hBI.match(/rgba?\(\s*(\d+)\s*,\s*(\d+)\s*,\s*(\d+)/g);if(cM&&cM.length>0){var tLm=0;for(var ci=0;ci<cM.length;ci++){var pts=cM[ci].match(/\d+/g);tLm+=sLum(parseInt(pts[0]),parseInt(pts[1]),parseInt(pts[2]));}hasDH=(tLm/cM.length)<0.4;}else{hasDH=true;}}else{hasDH=true;}}else{var hM=hCs.backgroundColor.match(/\d+/g);if(hM&&hM.length>=3){hasDH=sLum(parseInt(hM[0]),parseInt(hM[1]),parseInt(hM[2]))<0.4;}}}
       if(!hasDH){window.removeEventListener('scroll',onS);window.removeEventListener('resize',onS);applyScrolled();window._zappyNavNoDarkHero=true;}
+    })();
+    </script>
+
+    <script>
+    (function(){
+      var _applied=false;
+      function _isHeroBg(w){var img=w.querySelector('img');if(img&&(img.getAttribute('data-hero-bg')==='true'||img.getAttribute('data-hero-background')==='true'))return true;var p=(w.style.position||'').replace(/\s*!important\s*/g,'').trim();var ww=(w.style.width||'').replace(/\s*!important\s*/g,'').trim();var hh=(w.style.height||'').replace(/\s*!important\s*/g,'').trim();return p==='absolute'&&ww==='100%'&&hh==='100%';}
+      function fixDesktopWrappers(){
+        // No-op: desktop wrapper restoration is handled by ZAPPY_PUBLISHED_ZOOM_WRAPPER_RUNTIME
+        // in script.js (restoreWrapperDimensions). The old inflation logic here was expanding
+        // small wrappers (e.g. 139px logo wrappers) to their parent width, conflicting with
+        // the correct stored dimensions.
+      }
+      function _parsePos(s){var x=50,y=50;try{var m=(s||'').match(/(-?d+(?:.d+)?)%s+(-?d+(?:.d+)?)%/);if(m){x=parseFloat(m[1]);y=parseFloat(m[2]);}}catch(e){}if(!isFinite(x))x=50;if(!isFinite(y))y=50;return{x:Math.max(0,Math.min(100,x)),y:Math.max(0,Math.min(100,y))};}
+      function _coverPct(iA,cA){if(!isFinite(iA)||iA<=0||!isFinite(cA)||cA<=0)return{w:100,h:100};if(iA>=cA)return{w:(iA/cA)*100,h:100};return{w:100,h:(cA/iA)*100};}
+      function applyMobile(){
+        if(_applied)return;_applied=true;
+        document.querySelectorAll('[data-zappy-zoom-wrapper="true"]').forEach(function(w){
+          if(_isHeroBg(w))return;
+          var cw=w.style.getPropertyValue('width');
+          var _sW=parseFloat(w.getAttribute('data-zappy-zoom-wrapper-width'))||0;
+          var _sH=parseFloat(w.getAttribute('data-zappy-zoom-wrapper-height'))||0;
+          if(!cw&&!(_sW>0&&_sH>0))return;
+          if(!w._zappyDesktop)w._zappyDesktop={wStyle:w.getAttribute('style')};
+          var img=w.querySelector('img');
+          if(!img)return;
+          if(!img._zappyDesktop)img._zappyDesktop={src:img.getAttribute('src'),style:img.getAttribute('style')};
+          var mobileZoomStr=img.getAttribute('data-zappy-mobile-zoom');
+          var mobileZoom=parseFloat(mobileZoomStr);
+          var mobileSrc=img.getAttribute('data-zappy-mobile-src');
+          var mobilePos=img.getAttribute('data-zappy-mobile-object-position');
+          var parentOvf=w.parentElement?((w.parentElement.style.overflow||'')+(window.getComputedStyle(w.parentElement).overflow||'')).trim():'';
+          var inConstrainedParent=parentOvf.indexOf('hidden')!==-1||parentOvf.indexOf('clip')!==-1;
+          if(inConstrainedParent){
+            w.style.setProperty('max-width','100%','important');
+          }else{
+            w.style.setProperty('width','100%','important');
+            w.style.setProperty('max-width','100%','important');
+          }
+          if(mobileSrc)img.src=mobileSrc;
+          function _applyZoomCrop(_img,_w,_ePos,_eZoom){
+            var rect=_w.getBoundingClientRect();
+            if(!rect||!rect.width||!rect.height)return;
+            var nW=_img.naturalWidth||0,nH=_img.naturalHeight||0;
+            if(!(nW>0&&nH>0))return;
+            var iA=nW/nH,cA=rect.width/rect.height;
+            var cv=_coverPct(iA,cA);
+            var wP=100,hP=100;
+            if(_eZoom>=1){wP=cv.w*_eZoom;hP=cv.h*_eZoom;}
+            else{var t2=(_eZoom-0.5)/0.5;if(!isFinite(t2))t2=0;t2=Math.max(0,Math.min(1,t2));wP=100+t2*(cv.w-100);hP=100+t2*(cv.h-100);}
+            var p2=_parsePos(_ePos);
+            var lP=(100-wP)*(p2.x/100);
+            var tP=(100-hP)*(p2.y/100);
+            _img.style.setProperty('position','absolute','important');
+            _img.style.setProperty('left',lP+'%','important');
+            _img.style.setProperty('top',tP+'%','important');
+            _img.style.setProperty('width',wP+'%','important');
+            _img.style.setProperty('height',hP+'%','important');
+            _img.style.setProperty('max-width','none','important');
+            _img.style.setProperty('max-height','none','important');
+            _img.style.setProperty('display','block','important');
+            _img.style.setProperty('object-fit',_eZoom<1?'fill':'cover','important');
+            _img.style.setProperty('transform','none','important');
+            _img.style.setProperty('margin','0','important');
+          }
+          if(_sW>0&&_sH>0){
+            var effZoom=(isFinite(mobileZoom)&&mobileZoom>0)?mobileZoom:(parseFloat(img.getAttribute('data-zappy-zoom'))||1);
+            var effPos=mobilePos||img.getAttribute('data-zappy-object-position')||img.style.objectPosition||'50% 50%';
+            w.style.setProperty('overflow','hidden','important');
+            w.style.setProperty('position','relative','important');
+            w.style.setProperty('width','100%','important');
+            w.style.setProperty('max-width','100%','important');
+            if(_sW>0&&_sH>0){w.style.setProperty('padding-bottom','0','important');w.style.setProperty('aspect-ratio',_sW+'/'+_sH,'important');w.style.setProperty('height','auto','important');}
+            _applyZoomCrop(img,w,effPos,effZoom);
+            if(!(img.complete&&img.naturalWidth>0)){
+              (function(_i,_w2,_p,_z){_i.addEventListener('load',function _ol(){_i.removeEventListener('load',_ol);try{_applyZoomCrop(_i,_w2,_p,_z);}catch(e){}});
+              })(img,w,effPos,effZoom);
+            }
+          }else{
+            if(!inConstrainedParent)w.style.setProperty('height','auto','important');
+            img.style.setProperty('position','relative','important');
+            img.style.setProperty('width','100%','important');
+            img.style.setProperty('height','auto','important');
+            img.style.setProperty('max-width','100%','important');
+            img.style.setProperty('max-height',inConstrainedParent?'none':'400px','important');
+            img.style.setProperty('object-fit','cover','important');
+            img.style.setProperty('left','0','important');
+            img.style.setProperty('top','0','important');
+            img.style.setProperty('transform','none','important');
+          }
+        });
+        document.querySelectorAll('img[data-zappy-mobile-src],img[data-zappy-mobile-object-position],img[data-zappy-mobile-zoom]').forEach(function(img){
+          var zw=img.closest('[data-zappy-zoom-wrapper="true"]');
+          if(zw&&!_isHeroBg(zw))return;
+          if(!img._zappyDesktop)img._zappyDesktop={src:img.getAttribute('src'),style:img.getAttribute('style')};
+          var mobileSrc=img.getAttribute('data-zappy-mobile-src');
+          var mobilePos=img.getAttribute('data-zappy-mobile-object-position');
+          var mobileZoom=parseFloat(img.getAttribute('data-zappy-mobile-zoom'));
+          if(mobileSrc)img.src=mobileSrc;
+          if(mobilePos)img.style.setProperty('object-position',mobilePos,'important');
+          if(mobileZoom>1){
+            img.style.setProperty('transform','scale('+mobileZoom+')','important');
+            img.style.setProperty('transform-origin',mobilePos||'50% 50%','important');
+            var p=img.parentElement;
+            if(p)p.style.setProperty('overflow','hidden','important');
+          }
+        });
+      }
+      function revertDesktop(){
+        if(!_applied)return;_applied=false;
+        document.querySelectorAll('[data-zappy-zoom-wrapper="true"]').forEach(function(w){
+          if(w._zappyDesktop&&w._zappyDesktop.wStyle!=null){w.setAttribute('style',w._zappyDesktop.wStyle);}
+          var img=w.querySelector('img');
+          if(img&&img._zappyDesktop){
+            if(img._zappyDesktop.src!=null)img.setAttribute('src',img._zappyDesktop.src);
+            if(img._zappyDesktop.style!=null)img.setAttribute('style',img._zappyDesktop.style);
+            else img.removeAttribute('style');
+          }
+        });
+        document.querySelectorAll('img[data-zappy-mobile-src],img[data-zappy-mobile-object-position],img[data-zappy-mobile-zoom]').forEach(function(img){
+          var zw=img.closest('[data-zappy-zoom-wrapper="true"]');
+          if(zw&&!_isHeroBg(zw))return;
+          if(img._zappyDesktop){
+            if(img._zappyDesktop.src!=null)img.setAttribute('src',img._zappyDesktop.src);
+            if(img._zappyDesktop.style!=null)img.setAttribute('style',img._zappyDesktop.style);
+            else img.removeAttribute('style');
+          }
+        });
+        _fixHeroBgWrappers();
+        fixDesktopWrappers();
+      }
+      function _fixHeroBgWrappers(){var isMob=window.innerWidth<=768;document.querySelectorAll('[data-zappy-zoom-wrapper="true"]').forEach(function(w){if(!_isHeroBg(w))return;w.style.setProperty('position','absolute','important');w.style.setProperty('top','0','important');w.style.setProperty('left','0','important');w.style.setProperty('width','100%','important');w.style.setProperty('height','100%','important');w.style.setProperty('max-width','none','important');w.style.setProperty('overflow','hidden','important');w.setAttribute('data-zappy-zoom-wrapper-width-mode','full');var img=w.querySelector('img');if(img){img.style.setProperty('width','100%','important');img.style.setProperty('height','100%','important');img.style.setProperty('object-fit','cover','important');img.style.setProperty('position','relative','important');img.style.setProperty('top','0','important');img.style.setProperty('left','0','important');img.style.setProperty('max-width','none','important');img.style.setProperty('max-height','none','important');img.style.setProperty('display','block','important');if(isMob){var mSrc=img.getAttribute('data-zappy-mobile-src');var mPos=img.getAttribute('data-zappy-mobile-object-position');var mZoom=parseFloat(img.getAttribute('data-zappy-mobile-zoom'));if(mSrc){if(!img._zappyDesktop)img._zappyDesktop={src:img.getAttribute('src'),style:img.getAttribute('style')};img.src=mSrc;}if(mPos)img.style.setProperty('object-position',mPos,'important');if(mZoom>1){img.style.setProperty('transform','scale('+mZoom+')','important');img.style.setProperty('transform-origin',mPos||'50% 50%','important');}}}});}
+      function init(){
+        _fixHeroBgWrappers();
+        var mq=window.matchMedia('(max-width:768px)');
+        function onChange(e){if(e.matches)applyMobile();else revertDesktop();}
+        if(mq.matches)applyMobile();
+        else fixDesktopWrappers();
+        try{mq.addEventListener('change',onChange);}catch(e){mq.addListener(onChange);}
+      }
+      if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',init);
+      else setTimeout(init,50);
     })();
     </script>
 </body>
