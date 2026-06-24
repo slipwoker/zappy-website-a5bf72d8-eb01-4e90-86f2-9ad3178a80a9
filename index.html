@@ -161,26 +161,31 @@
       // Track button clicks (counted as actions)
       if (target.tagName === 'BUTTON' || target.closest('button')) {
         var button = target.tagName === 'BUTTON' ? target : target.closest('button');
-        trackEvent('click', {
+        var clickMeta = {
           element: 'button',
           text: button.textContent.trim().substring(0, 100),
           id: button.id || null,
           class: button.className || null
-        });
+        };
+        
+        trackEvent('click', clickMeta);
       }
       
       // Track link clicks (navigation - not counted as actions)
       else if (target.tagName === 'A' || target.closest('a')) {
         var link = target.tagName === 'A' ? target : target.closest('a');
-        trackEvent('navigation', {
+        var navMeta = {
           element: 'link',
           text: link.textContent.trim().substring(0, 100),
           href: link.href,
           external: link.hostname !== window.location.hostname
-        });
+        };
+        
+        trackEvent('navigation', navMeta);
       }
     }, true);
   }
+  
   
   // Track form submissions
   if (config.trackFormSubmissions) {
@@ -357,7 +362,7 @@
       <div class="search-results" id="mobile-search-results"></div>
     </div>
   
-<script>window.ZAPPY_WEBSITE_ID = "a5bf72d8-eb01-4e90-86f2-9ad3178a80a9";window.ZAPPY_API_BASE = (window.location.pathname.includes('/preview') ? "https://api.zappy5.com" : "https://api.zappy5.com");</script><a class="skip-link" href="#main">דלג לתוכן הראשי</a>
+<script>window.ZAPPY_WEBSITE_ID = "a5bf72d8-eb01-4e90-86f2-9ad3178a80a9";window.ZAPPY_API_BASE = "https://api.zappy5.com";</script><a class="skip-link" href="#main">דלג לתוכן הראשי</a>
   <nav class="navbar" dir="rtl">
   <button class="mobile-toggle" id="mobileToggle" aria-label="Menu">
     <svg class="hamburger-icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
@@ -863,7 +868,7 @@
         </svg>
       </div>
       <h1 class="hero-headline">מתנות מעץ בעבודת יד<br>שמספרות את הסיפור שלכם</h1>
-      <h3 class="hero-subtitle">חריטה אישית במלחם – שלטים לבית, מתנות לחתונה, ימי הולדת, גיוס ושחרור. כל יצירה נושאת חום, כוונה וזיכרון.</h3>
+      <h3 class="hero-subtitle">חריטה אישית במלחם – שלטים לבית, מתנות לחתונה, ימי הולדת, הנצחה וזיכרון. כל יצירה נושאת חום, כוונה וזיכרון.</h3>
       <div class="hero-ctas">
         <a href="/contact" class="btn-primary">צרו קשר ליצירה אישית</a>
         <a href="/gallery" class="btn-secondary">לגלריית העבודות</a>
@@ -950,8 +955,8 @@
             </svg>
           </div>
           <div class="index-features-section__feature-text">
-            <h3 class="index-features-section__feature-title">מתנות מרגשות לחתונה, יום הולדת וגיוס</h3>
-            <p class="index-features-section__feature-desc">בין אם אתם מחפשים מתנה לחתונה, ליום הולדת או לרגעי ציון דרך כמו גיוס ושחרור – כל יצירה מותאמת לאירוע ולאדם. עץ חם, טקסטורות טבעיות ומגע אישי יוצרים פריט שמרגש באמת.</p>
+            <h3 class="index-features-section__feature-title">הנצחת יקירים – חריטת תמונה אישית על עץ</h3>
+            <p class="index-features-section__feature-desc">הנציחו את זכר יקירכם בחריטת תמונה אישית על עץ מלא. בין אם מדובר בחלל מערכות ישראל או באדם אהוב שהלך לעולמו – כל יצירה נעשית ברגש, בעדינות ובדיוק, כדי לשמר את הזיכרון לנצח במגע חם של אומנות.</p>
           </div>
         </div>
 
@@ -999,8 +1004,8 @@
 <section data-band-index="2" class="index-showcase-section" data-layout-spec="בית-showcase" id="index-showcase-section">
   <div class="index-showcase-section__container">
     <header class="index-showcase-section__header">
-      <h2 class="index-showcase-section__title" style="">מתנות מעץ בעבודת יד – לכל רגע משמעותי בחיים</h2>
-      <p class="index-showcase-section__subtitle" style="">כל יצירה של בר אוריין נולדת מתוך סיפור אישי. מחריטה עדינה במלחם ועד לגימור מושלם – אנו יוצרים מתנות ייחודיות לחתונה, ליום הולדת, לגיוס ולשחרור, שמלוות אתכם לכל החיים.</p>
+      <h2 class="index-showcase-section__title" >מתנות מעץ בעבודת יד – לכל רגע משמעותי בחיים</h2>
+      <p class="index-showcase-section__subtitle" >כל יצירה של בר אוריין נולדת מתוך סיפור אישי. מחריטה עדינה במלחם ועד לגימור מושלם – אנו יוצרים מתנות ייחודיות לחתונה, ליום הולדת, לגיוס ולשחרור, שמלוות אתכם לכל החיים.</p>
     </header>
 
     <nav class="zappy-catalog-menu rtl" id="zappy-catalog-menu" dir="rtl" style="transition: background 0.3s, backdrop-filter 0.3s, -webkit-backdrop-filter 0.3s; display: none !important;">
@@ -1020,8 +1025,8 @@
           <div data-zappy-zoom-wrapper="true" data-element-id="img-1781373253732-oo985vgsk" data-element-type="image" data-zappy-zoom-wrapper-width="375px" data-zappy-zoom-wrapper-height="280px" data-zappy-zoom-wrapper-width-mode="px" data-zappy-zoom-wrapper-align="center" style="position: relative !important; overflow: hidden !important; width: 375px !important; max-width: 100% !important; margin-left: auto !important; margin-right: auto !important; height: 280px !important; display: block !important;" data-zappy-zoom-clip="true" data-zappy-wrapper-margins-applied="true" data-zappy-card-slot-fill="1"><img loading="lazy" decoding="async" data-placeholder="index-showcase-image-1" data-context="A close-up of a handcrafted wooden wedding gift with pyrography art, featuring a couple's names and wedding date burned into light oak wood, surrounded by delicate botanical line art and two intertwined rings motif, warm candlelight ambiance" width="600" height="400" src="/assets/site-index-showcase-image-1.webp" alt="מתנת חתונה מעץ בחריטת מלחם עם שמות בני הזוג" class="index-showcase-section__tile-img" data-element-type="image" data-element-id="img-1781373253732-oo985vgsk" style="object-position: 50% 50%; margin: 0px !important; left: -4.08764% !important; top: -2% !important; width: 108.175% !important; height: 104% !important; max-width: none !important; max-height: none !important; display: block !important; object-fit: cover !important;" data-zappy-zoom="1.04"></div>
           <div class="index-showcase-section__tile-scrim"></div>
           <div class="index-showcase-section__tile-text">
-            <h3 class="index-showcase-section__tile-title" style="">מתנות לחתונה</h3>
-            <p class="index-showcase-section__tile-desc" style="">שלטי אהבה אישיים עם שמות ותאריך החתונה<br>וכמובן תמונה שתבחרו להנציח&nbsp;</p>
+            <h3 class="index-showcase-section__tile-title" >מתנות לחתונה</h3>
+            <p class="index-showcase-section__tile-desc" >שלטי אהבה אישיים עם שמות ותאריך החתונה<br>וכמובן תמונה שתבחרו להנציח&nbsp;</p>
           </div>
         </div>
       </article>
@@ -1029,7 +1034,7 @@
       <!-- Tile 2: Family Home Signs -->
       <article class="index-showcase-section__tile">
         <div class="index-showcase-section__tile-img-wrapper">
-          <img loading="lazy" decoding="async" data-placeholder="index-showcase-image-2" data-context="A warm family home sign made of rich walnut wood with pyrography lettering of a family name, decorated with a tree-of-life motif and small heart details, hanging on a cream-colored wall" width="600" height="400" src="/assets/site-index-showcase-image-2.webp" alt="שלט בית משפחתי מעץ בחריטה אישית" class="index-showcase-section__tile-img" data-element-type="image" data-element-id="img-1781373253732-9mibuoure" style="">
+          <img loading="lazy" decoding="async" data-placeholder="index-showcase-image-2" data-context="A warm family home sign made of rich walnut wood with pyrography lettering of a family name, decorated with a tree-of-life motif and small heart details, hanging on a cream-colored wall" width="600" height="400" src="/assets/site-index-showcase-image-2.webp" alt="שלט בית משפחתי מעץ בחריטה אישית" class="index-showcase-section__tile-img" data-element-type="image" data-element-id="img-1781373253732-9mibuoure" >
           <div class="index-showcase-section__tile-scrim"></div>
           <div class="index-showcase-section__tile-text">
             <h3 class="index-showcase-section__tile-title">שלטים לבית</h3>
@@ -1045,7 +1050,7 @@
           <div class="index-showcase-section__tile-scrim"></div>
           <div class="index-showcase-section__tile-text">
             <h3 class="index-showcase-section__tile-title">מתנות ליום הולדת</h3>
-            <p class="index-showcase-section__tile-desc" style="">מזכרת אישית עם שם, תאריך ואיור שמנציח את הרגע</p>
+            <p class="index-showcase-section__tile-desc" >מזכרת אישית עם שם, תאריך ואיור שמנציח את הרגע</p>
           </div>
         </div>
       </article>
@@ -1053,11 +1058,11 @@
       <!-- Tile 4: Military Milestones -->
       <article class="index-showcase-section__tile">
         <div class="index-showcase-section__tile-img-wrapper">
-          <img loading="lazy" decoding="async" data-placeholder="index-showcase-image-4" data-context="A wooden military milestone gift featuring a soldier's silhouette and enlistment or discharge date burned into dark stained wood, with an Israeli flag detail and olive branch motif, dramatic side lighting" width="600" height="400" src="/assets/site-index-showcase-image-4.webp" alt="מתנה לגיוס או שחרור מעץ עם חריטת מלחם" class="index-showcase-section__tile-img" data-element-type="image" data-element-id="img-1781373253733-m1jkibnlq" style="">
+          <img loading="lazy" decoding="async" data-placeholder="index-showcase-image-4" data-context="A wooden military milestone gift featuring a soldier's silhouette and enlistment or discharge date burned into dark stained wood, with an Israeli flag detail and olive branch motif, dramatic side lighting" width="600" height="400" src="/assets/site-index-showcase-image-4.webp" alt="הנצחה אישית על עץ – חריטת תמונה לזכר יקירכם" class="index-showcase-section__tile-img" data-element-type="image" data-element-id="img-1781373253733-m1jkibnlq" >
           <div class="index-showcase-section__tile-scrim"></div>
           <div class="index-showcase-section__tile-text">
-            <h3 class="index-showcase-section__tile-title">מתנות לגיוס ושחרור</h3>
-            <p class="index-showcase-section__tile-desc">ציון דרך משמעותי במתנה אישית שמספרת את הסיפור הצבאי</p>
+            <h3 class="index-showcase-section__tile-title">הנצחה אישית על עץ</h3>
+            <p class="index-showcase-section__tile-desc">הנציחו את יקירכם בחריטת תמונה אישית על עץ – יצירה מרגשת שמשמרת את הזיכרון לנצח</p>
           </div>
         </div>
       </article>
@@ -1228,13 +1233,13 @@
       <!-- Quick Links -->
       <div class="footer-col footer-links-col">
         
-        <ul class="footer-links" style=""></ul>
+        <ul class="footer-links" ></ul>
       </div>
 
       <!-- Contact Info -->
       <div class="footer-col footer-contact-col">
         <h4>צור קשר</h4>
-        <ul class="footer-contact" style=""><li>
+        <ul class="footer-contact" ><li>
             <span class="contact-icon"><i class="fas fa-envelope" data-element-type="icon" data-element-id="icon-1781374882264-k7ajn2cgk" data-icon-type="fontawesome" style="cursor: pointer;"></i></span>
             <span class="contact-text"><a href="mailto:oryanna111@gmail.com">oryanna111@gmail.com</a></span>
           </li><li>
@@ -1245,7 +1250,7 @@
       <!-- Business Hours -->
       <div class="footer-col footer-hours-col">
         
-        <ul class="footer-hours" style=""></ul>
+        <ul class="footer-hours" ></ul>
       </div>
 
       <!-- Social Media -->
